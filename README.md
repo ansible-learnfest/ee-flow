@@ -31,6 +31,10 @@ podman push localhost/ee-ansible-demo:0.1.0 pah.<LABID>.<SUBDOMAIN>.opentlc.com/
 ## Create Project
 - Create a new Project to point to https://github.com/ansible-learnfest/ee-flow.git
 
+## Create Credentials
+  
+## Create Inventory
+  
 ## Create Job Template
 - Create a new Job Template `Deploy Container` that
   - Runs deploy-container.yml from the new Project
