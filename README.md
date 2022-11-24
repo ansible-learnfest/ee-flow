@@ -26,7 +26,7 @@ podman push localhost/ansible-demo-ee:0.1.0 pah.<LABID>.<SUBDOMAIN>.opentlc.com/
 - Configure the new EE
   - **Name**: ee-ansible-demo
   - **Image**: pah.<LABID>.<SUBDOMAIN>.opentlc.com/ansible-demo-ee:latest
-  - **Credential: Automation Hub Container Registry
+  - **Credential**: Automation Hub Container Registry
 
 ## Create Project
 - Create a new Project to point to https://github.com/ansible-learnfest/ee-flow.git
