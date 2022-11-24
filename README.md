@@ -16,8 +16,8 @@ podman login registry.redhat.io
 ## Push image to PAH
 ```
 podman login pah.<LABID>.<SUBDOMAIN>.opentlc.com --username admin --password XXXXX
-podman tag localhost/ansible-demo-ee:0.1.0 pah.<LABID>.<SUBDOMAIN>.opentlc.com/ansible-demo-ee:latest
-podman push localhost/ansible-demo-ee:0.1.0 pah.<LABID>.<SUBDOMAIN>.opentlc.com/ansible-demo-ee
+podman tag localhost/ee-ansible-demo:0.1.0 pah.<LABID>.<SUBDOMAIN>.opentlc.com/ee-ansible-demo:latest
+podman push localhost/ee-ansible-demo:0.1.0 pah.<LABID>.<SUBDOMAIN>.opentlc.com/ee-ansible-demo
 ```
 
 ## Configure EE in Controller
@@ -25,7 +25,7 @@ podman push localhost/ansible-demo-ee:0.1.0 pah.<LABID>.<SUBDOMAIN>.opentlc.com/
 - Go to `Execution Environments`
 - Configure the new EE
   - **Name**: ee-ansible-demo
-  - **Image**: pah.<LABID>.<SUBDOMAIN>.opentlc.com/ansible-demo-ee:latest
+  - **Image**: pah.<LABID>.<SUBDOMAIN>.opentlc.com/ee-ansible-demo:latest
   - **Credential**: Automation Hub Container Registry
 
 ## Create Project
