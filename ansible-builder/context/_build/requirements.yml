@@ -1,0 +1,4 @@
+---
+# list your ansible collections here
+collections:
+  - containers.podman
