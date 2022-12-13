@@ -1,7 +1,6 @@
 ---
 - name: deploy httpd container
   hosts: all
-  become: true
   gather_facts: false
   vars:
     webroot: "/webroot"
@@ -30,7 +29,7 @@
       ansible.builtin.copy:
         dest: "{{ webroot }}/index.html"
         content: |
-                    Custom Web Page
+                    Welcome to Ansible LearnFest!
         setype: "container_share_t"
 
     - name: run httpd container
