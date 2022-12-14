@@ -1,6 +1,7 @@
 ---
 - name: deploy httpd container
   hosts: all
+  become: true
   gather_facts: false
   vars:
     webroot: "/webroot"
